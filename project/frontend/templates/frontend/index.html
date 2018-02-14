@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <title>Valentino G. - www.valentinog.coom</title>
+</head>
+
+<body>
+<nav class="navbar is-dark">
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item has-text-weight-bold has-text-light" href="/">
+        HOME
+      </a>
+    </div>
+    <div class="navbar-end">
+      {% if user.is_authenticated %}
+      <div class="navbar-item">
+        <p>
+          Logged in as {{ user.email }}
+        </p>
+      </div>
+      <div class="navbar-item">
+        <a class="button has-text-weight-bold" href="/accounts/logout/">
+          LOGOUT
+        </a>
+      </div>
+      {% else %}
+      <div class="navbar-item">
+        <a class="button has-text-weight-bold" href="/accounts/login/">
+          LOGIN
+        </a>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+  </div>
+</nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+          <div id="app"><!-- React --></div>       
+      </div>
+    </div>
+  </section>
+</body>
+
+{% load static %}
+<script src="{% static "frontend/main.js" %}"></script>
+
+</html>

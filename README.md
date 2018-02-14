@@ -9,13 +9,18 @@ Django REST framework / React quickstart
 
 * Install Python dependencies: `pipenv install`
 * Install Javascript dependencies: `npm i`
-* Migrate: `python manage.py migrate`
+* Make the bundle: `npm run build`
+* Activate the virtualenv: `pipenv shell`
+* Migrate: `cd project && python manage.py migrate`
+* Populate the database: `python manage.py loaddata leads`
 * Run locally: `python manage.py runserver`
 * Head over http://127.0.0.1:8000/
 
-## Coming soon
+## TODO
 
-- authentication
+* Authentication
+* React routing
+* webpack 4
 
 ## Meta
 
