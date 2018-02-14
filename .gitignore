@@ -99,3 +99,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# Django
+db.sqlite3
