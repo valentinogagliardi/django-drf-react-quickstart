@@ -4,7 +4,8 @@
   "description": "Django REST framework / React quickstart",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "dev": "webpack --mode development ./project/frontend/src/js/index.js --output ./project/frontend/static/frontend/main.js",
+    "build": "webpack --mode production ./project/frontend/src/js/index.js --output ./project/frontend/static/frontend/main.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "webpack": "^3.11.0"
+    "webpack": "^4.0.0-beta.1",
+    "webpack-cli": "^2.0.6"
   }
 }
