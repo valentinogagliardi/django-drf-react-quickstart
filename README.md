@@ -12,9 +12,15 @@ Django REST framework / React quickstart
 * Make the bundle: `npm run dev`
 * Activate the virtualenv: `pipenv shell`
 * Migrate: `cd project && python manage.py migrate`
-* Populate the database: `python manage.py loaddata leads`
-* Run locally: `python manage.py runserver`
+* Populate the database: `cd project && python manage.py loaddata leads`
+* Run locally: `cd project && python manage.py runserver`
 * Head over http://127.0.0.1:8000/
+
+## Test
+
+Unit: `cd project && python manage.py test`
+UI: `node_modules/.bin/cypress open`
+Coverage: `cd project && coverage run manage.py test`
 
 ## Production
 
