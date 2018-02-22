@@ -18,9 +18,9 @@ Django REST framework / React quickstart
 
 ## Test
 
-Unit: `cd project && python manage.py test`
-UI: `node_modules/.bin/cypress open`
-Coverage: `cd project && coverage run manage.py test`
+* Unit: `cd project && python manage.py test`
+* UI: `node_modules/.bin/cypress open`
+* Coverage: `cd project && coverage run manage.py test`
 
 ## Production
 
