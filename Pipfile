@@ -6,8 +6,10 @@ name = "pypi"
 [dev-packages]
 
 [packages]
+
 django = "*"
 djangorestframework = "*"
+coverage = "*"
 
 
 [requires]
