@@ -1,28 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
+import shortid from "shortid";
+
+const uuid = shortid.generate;
 
 const Table = ({ data }) => {
-  return (
+  return !data.length ? (
+    <p>Nothing to show</p>
+  ) : (
     <React.Fragment>
       <h2 className="subtitle">
-        Showing <strong>{data.length} leads</strong>
+        Showing <strong>{data.length} items</strong>
       </h2>
       <table className="table">
         <thead>
           <tr>
-            <th>Email</th>
-            <th>Name</th>
-            <th>Message</th>
+            {Object.entries(data[0]).map(el => <th key={uuid()}>{el[0]}</th>)}
           </tr>
         </thead>
         <tbody>
-          {data.sort().map(el => (
+          {data.map(el => (
             <tr key={el.id}>
-              <td>
-                <strong>{el.email}</strong>
-              </td>
-              <td>{el.name}</td>
-              <td>{el.message}</td>
+              {Object.entries(el).map(el => <td key={uuid()}>{el[1]}</td>)}
             </tr>
           ))}
         </tbody>

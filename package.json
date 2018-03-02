@@ -4,8 +4,8 @@
   "description": "Django REST framework / React quickstart",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development ./project/frontend/src/js/index.js --output ./project/frontend/static/frontend/main.js",
-    "build": "webpack --mode production ./project/frontend/src/js/index.js --output ./project/frontend/static/frontend/main.js"
+    "dev": "webpack --mode development ./project/frontend/src/index.js --output ./project/frontend/static/frontend/main.js",
+    "build": "webpack --mode production ./project/frontend/src/index.js --output ./project/frontend/static/frontend/main.js"
   },
   "repository": {
     "type": "git",
@@ -21,14 +21,16 @@
   "devDependencies": {
     "axios": "^0.17.1",
     "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
+    "babel-loader": "^7.1.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "cypress": "^1.4.2",
-    "prop-types": "^15.6.0",
+    "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "webpack": "^4.0.0-beta.1",
-    "webpack-cli": "^2.0.6"
+    "shortid": "^2.2.8",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10"
   }
 }

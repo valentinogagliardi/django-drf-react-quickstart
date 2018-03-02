@@ -3,7 +3,5 @@ from django.db import models
 class Lead(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField()
-    phone = models.CharField(max_length=100)
     message = models.CharField(max_length=300)
-    source = models.CharField(max_length=150)
     created_at = models.DateTimeField(auto_now_add=True)
