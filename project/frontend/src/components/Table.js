@@ -12,7 +12,7 @@ const Table = ({ data }) => {
       <h2 className="subtitle">
         Showing <strong>{data.length} items</strong>
       </h2>
-      <table className="table">
+      <table className="table is-striped">
         <thead>
           <tr>
             {Object.entries(data[0]).map(el => <th key={uuid()}>{el[0]}</th>)}
