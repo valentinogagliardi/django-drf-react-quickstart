@@ -4,8 +4,8 @@ import shortid from "shortid";
 
 const uuid = shortid.generate;
 
-const Table = ({ data }) => {
-  return !data.length ? (
+const Table = ({ data }) =>
+  !data.length ? (
     <p>Nothing to show</p>
   ) : (
     <React.Fragment>
@@ -28,7 +28,6 @@ const Table = ({ data }) => {
       </table>
     </React.Fragment>
   );
-};
 
 Table.propTypes = {
   data: PropTypes.array.isRequired
