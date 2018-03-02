@@ -5,10 +5,7 @@ import Table from "./Table";
 
 const App = () => {
   return (
-    <DataProvider
-      endpoint={"api/lead/"}
-      render={data => <Table data={data} />}
-    />
+    <DataProvider endpoint="api/lead/" render={data => <Table data={data} />} />
   );
 };
 
