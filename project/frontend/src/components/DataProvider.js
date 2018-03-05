@@ -8,15 +8,11 @@ class DataProvider extends Component {
     render: PropTypes.func.isRequired
   };
 
-  constructor() {
-    super();
-
-    this.state = {
-      data: [],
-      loaded: false,
-      placeholder: "Loading..."
-    };
-  }
+  state = {
+    data: [],
+    loaded: false,
+    placeholder: "Loading..."
+  };
 
   componentDidMount() {
     axios
