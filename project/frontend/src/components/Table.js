@@ -8,7 +8,7 @@ const Table = ({ data }) =>
   !data.length ? (
     <p>Nothing to show</p>
   ) : (
-    <React.Fragment>
+    <div className="column">
       <h2 className="subtitle">
         Showing <strong>{data.length} items</strong>
       </h2>
@@ -26,7 +26,7 @@ const Table = ({ data }) =>
           ))}
         </tbody>
       </table>
-    </React.Fragment>
+    </div>
   );
 
 Table.propTypes = {
