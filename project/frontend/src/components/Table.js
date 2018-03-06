@@ -5,9 +5,7 @@ import shortid from "shortid";
 const uuid = shortid.generate;
 
 const Table = ({ data }) =>
-  !data.length ? (
-    <p>Nothing to show</p>
-  ) : (
+  !data.length ? null : (
     <div className="column">
       <h2 className="subtitle">
         Showing <strong>{data.length} items</strong>
