@@ -17,9 +17,9 @@ Django REST framework / React quickstart
 
 ## Test
 
-* Unit: `cd project && python manage.py test`
+* Unit: `cd project && pipenv run python manage.py test`
 * E2E: `npm run e2e`
-* Coverage: `cd project && coverage run manage.py test`
+* Coverage: `cd project && pipenv run coverage run manage.py test`
 
 ## Production
 
