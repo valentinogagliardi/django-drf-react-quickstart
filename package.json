@@ -21,17 +21,18 @@
   },
   "homepage": "https://github.com/valentinogagliardi/django-drf-react-quickstart#readme",
   "devDependencies": {
-    "babel-core": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "cypress": "^1.4.2",
-    "prop-types": "^15.6.1",
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0",
-    "shortid": "^2.2.8",
-    "webpack": "^4.4.1",
-    "webpack-cli": "^2.0.13"
-  }
+    "cypress": "^3.0.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "weak-key": "^1.0.0",
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.0.8"
+  },
+  "dependencies": {}
 }
