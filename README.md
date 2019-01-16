@@ -28,7 +28,7 @@ Django REST framework / React quickstart
 
 ## TODO
 
-* Authentication
+* ~~Authentication~~
 * React routing
 * Production
 

@@ -7,10 +7,10 @@ name = "pypi"
 coverage = "*"
 
 [packages]
-
 django = "*"
 djangorestframework = "*"
-
+django-rest-auth = "*"
+django-allauth = "*"
 
 [requires]
 python_version = "3.6"
